@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Bonjour</title>
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+    <body>
+        <h2>Ceci est un test !</h2>
+        
+        <h3>Simple variable et filtres</h3>
+        
+        <p>La valeur d'une variable du template peut être insérée simplement : {{ machin }} .</p>
+        
+        <p>Il est également possible de passer cette valeur à travers une moulinette appelée un "filtre" dont la liste peut être trouvée <a href="http://jinja.pocoo.org/docs/2.9/templates/#builtin-filters">dans la doc</a> : {{ machin|upper }} ou {{ machin|capitalize }} ou {{ machin|replace("uc", "ash")|capitalize }}...</p>
+        
+        <h3>Commandes ? Parcours de liste</h3>
+        
+        <ul>
+        {% for j in liste %}
+        
+            <li> Dans la liste : {{ j }} </li>
+        
+        {% endfor %}
+        </ul>
+        
+    </body>

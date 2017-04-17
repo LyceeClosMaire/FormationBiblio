@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Bonjour</title>
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+    <body>
+        <h2>Les informations de la requête</h2>
+        
+        <p>La valeur aléatoire loops vaut : {{ loops }}. Selon qu'elle vaille 1 ou non, on va changer la présentation suivante :</p>
+        
+        {% if loops is greaterthan 1 %}
+        
+            <p>Félicitations !! Vous avez gagné {{ num }} cadeaux !</p>
+            {% for step in range(loops) %}
+                <p>Bravo n°{{step}}, {{ name }} !</p>
+            {% endfor%}
+        
+        {% else %}
+        
+            <p>Salutations à notre visiteur n°{{ num }} : {{ name }}.</p>
+        
+        {% endif %}
+        
+    </body>
