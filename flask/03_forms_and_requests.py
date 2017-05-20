@@ -1,6 +1,6 @@
 ﻿# N'oubliez pas d'importer request
 from flask import Flask, render_template, request
-from random import randint
+
 app = Flask("Forms and Request")
 
 @app.route("/")
