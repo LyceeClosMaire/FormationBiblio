@@ -2,3 +2,5 @@ hndoc_*/**
 
 
 flask/\.idea/
+
+flask/\.vs/
